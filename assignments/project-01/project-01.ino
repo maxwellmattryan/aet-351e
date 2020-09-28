@@ -1,7 +1,9 @@
 int ledPins[] = {1, 3, 5, 7, 9};
 int ledPinNum = 5;
 
-int ledDelayTime = 50;
+int potPin = A0;
+
+int maxDelayTime = 100;
 
 // SETUP
 void setup() {
@@ -24,7 +26,13 @@ void loop() {
 void writeLedPins() {
   for(int i = 0; i < ledPinNum; i++) {
     digitalWrite(ledPins[i], HIGH);
-    delay(ledDelayTime);
+    delay(readDelayTime());
     digitalWrite(ledPins[i], LOW);
   }
+}
+
+int readDelayTime() {
+  float potValue = 1.0f - analogRead(potPin) / 1023.0f;
+  Serial.println(potValue, maxDelayTime * potValue);
+  return maxDelayTime * potValue;
 }
