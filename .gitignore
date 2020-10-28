@@ -1,2 +1,8 @@
 # Non-shareable information
 /notes
+
+# Media files that aren't necessary for the repository
+*.mp4
+*.mov
+*.prproj
+*.drp
