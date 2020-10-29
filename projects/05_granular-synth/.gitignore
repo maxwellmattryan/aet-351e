@@ -4,4 +4,4 @@
 .vscode/launch.json
 .vscode/ipch
 
-**/*.ino.cpp
+*.ino.cpp
