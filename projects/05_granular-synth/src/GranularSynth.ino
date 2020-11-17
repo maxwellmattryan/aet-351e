@@ -67,7 +67,7 @@ bool isInSequencerMode = true;
 bool isSequencerActive = false;
 int sequencerStartTime = 0;
 
-const char* GRAIN_SAMPLE = "cult.wav";
+const char* GRAIN_SAMPLE = "age.wav";
 const int GRAIN_PITCH_POT = A6;
 const int GRAIN_SIZE_POT = A3;
 const int GRAIN_RESET_BUTTON = 3;

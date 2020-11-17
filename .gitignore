@@ -6,3 +6,6 @@
 *.mov
 *.prproj
 *.drp
+
+# Mac-related files
+**/.DS_Store
