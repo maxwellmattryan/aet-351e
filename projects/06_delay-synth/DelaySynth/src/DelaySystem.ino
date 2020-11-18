@@ -106,6 +106,7 @@ void initControls() {
 
 void initComponents() {
     osc.begin(1.0f, 100.0f, WAVEFORM_SAWTOOTH);
+    
 
     filter.frequency(240.0f);
     filter.resonance(1.4f);
